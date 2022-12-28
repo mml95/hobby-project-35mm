@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>35mm Cameras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/630ef5f310.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        to top,
+        lightgrey 0%,
+        lightgrey 1%,
+        #e0e0e0 26%,
+        #efefef 48%,
+        #d9d9d9 75%,
+        #bcbcbc 100%
+      );
+    }
+
+    h1 {
+      font-family: "Arimo", sans-serif;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 0.2;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Didact Gothic", sans-serif;
+      margin-bottom: -5px;
+      margin-top: -5px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .learn-button {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5rem 1.5rem;
+      background-color: black;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      font-family: "Arimo", sans-serif;
+      cursor: pointer;
+      border-radius: 2rem;
+      outline-style: solid;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .learn-button a {
+      color: white;
+    }
+
+    .learn-button:hover {
+      background: white;
+      color: black;
+      outline-style: solid;
+    }
+
+    .learn-button a:hover {
+      color: black;
+    }
+
+    button .fa-circle-half-stroke {
+      height: 50%;
+      width: 50%;
+      font-size: 1rem;
+      display: block;
+      align-self: center;
+      position: relative;
+      color: #21262b;
+      background: transparent;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+    }
+
+    .icon-font {
+      font-family: "Didact Gothic", sans-serif;
+    }
+
+    .toggle-button {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 10px;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+
+    .container {
+      margin: 20px auto;
+      width: 866px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 70%;
+    }
+
+    p {
+      line-height: 1.5;
+      font-family: "Didact Gothic", sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a.wiki {
+      text-decoration: red underline;
+      color: black;
+      font-weight: bolder;
+    }
+
+    a.wiki:hover {
+      font-size: 16.5px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    footer a {
+      color: #8e8e8e;
+      font-weight: bold;
+    }
+
+    .camera-intro-picture {
+      display: block;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    .camera-intro-picture:hover {
+      filter: contrast(50%);
+      transform: scale(1.1);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* grid-template-columns: repeat(4,200px); */
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+      grid-gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid img:hover {
+      transform: scale(3);
+    }
+
+    .dark {
+      background: #21262b;
+      color: #fdfdfd;
+      /* #F2F2f2 */
+      /* #21262B */
+    }
+
+    .dark .container {
+      background: #353d44;
+    }
+
+    .dark .icon-font {
+      background: #353d44;
+      color: white;
+    }
+
+    .dark .fa-circle-half-stroke {
+      background: #353d44;
+      color: white;
+    }
+
+    .dark a.wiki {
+      color: #fdfdfd;
+    }
+
+    @media screen and (max-width: 655px) {
+      h1 {
+        line-height: 1;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Vintage Photography</h1>
+      <h2>35mm Cameras from the 60s, 70s, 80s</h2>
+      <br />
+      <button class="toggle-button">
+        <i class="fa-solid fa-circle-half-stroke fa-font-case theme-button"
+          ><span class="icon-font">Theme</span></i
+        >
+      </button>
+      <a
+        href="https://www.culturedkiwi.com/best-35mm-film-camera/"
+        target="_blank"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/429/original/20221226_221930.jpeg?1672138697"
+          alt=""
+          class="camera-intro-picture"
+          title="Launch camera guide"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/428/original/20221226_221705.jpeg?1672138673"
+          alt=""
+          title="Asahi Pentax K-1000"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/427/original/20221226_221111.jpeg?1672138652"
+          alt=""
+          title="Minolta X-700"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/426/original/20221226_220935.jpeg?1672138624"
+          alt=""
+          title="Olympus OM-10"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/425/original/20221226_220800.jpeg?1672138602"
+          alt=""
+          title="Pentax ME Program"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/424/original/20221226_220629.jpeg?1672138562"
+          alt=""
+          title="Nikon FG"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/423/original/20221226_220419.jpeg?1672138504"
+          alt=""
+          title="Canon A-1"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/422/original/20221226_220029.jpeg?1672138478"
+          alt=""
+          title="Pentax Spotmatic F"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/421/original/20221226_215815.jpeg?1672138418"
+          alt=""
+          title="Pentax K-1000"
+        />
+      </div>
+      <p>
+        Photography, as we know it today, began in the late 1830s in France.
+        Joseph Nicéphore Niépce used a portable camera obscura to expose a
+        pewter plate coated with bitumen to light. This is the first recorded
+        image that did not fade quickly.
+      </p>
+
+      <p>
+        In modern times, film is the chemical emulsion on a plastic substrate
+        that is sensitive to light. When exposed, an analogous image of the
+        scene is created within the chemical layer of the material.
+        <a
+          href="https://en.wikipedia.org/wiki/135_film#Use_in_still_photographic_film_cameras"
+          target="_blank"
+          class="wiki"
+        >
+          More on 20th Century Camera Wiki</a
+        >
+      </p>
+      <button class="learn-button">
+        <a
+          href="https://www.culturedkiwi.com/best-35mm-film-camera/"
+          target="_blank"
+          >Camera Guide</a
+        >
+      </button>
+    </div>
+    <footer>
+      <a
+        href="https://github.com/mml95/dictionary-app-react"
+        target="_blank"
+        title="Visit my Github"
+        >Open-source</a
+      >
+      <span>by</span><a href="mailto:mml@mml95.dev" title="Email me"> MML</a>
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      // function changeTheme() {
+      //   let body = document.querySelector("body");
+      //   if (body.classList.contains("dark")) {
+      //     body.classList.remove("dark");
+      //   } else {
+      //   body.classList.add("dark");
+      //   }
+      // }
+
+      // const changeTheme = document.getElementById('changeTheme');
+      // changeTheme.addEventListener('click', () => {
+      // document.body.classList.toggle('dark');
+      // })
+    </script>
+  </body>
+</html>
