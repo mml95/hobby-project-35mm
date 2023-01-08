@@ -16,223 +16,224 @@
       src="https://kit.fontawesome.com/630ef5f310.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <style>
-    body {
-      background: linear-gradient(
-        to top,
-        lightgrey 0%,
-        lightgrey 1%,
-        #e0e0e0 26%,
-        #efefef 48%,
-        #d9d9d9 75%,
-        #bcbcbc 100%
-      );
-    }
 
-    h1 {
-      font-family: "Arimo", sans-serif;
-      text-align: center;
-      font-size: 3rem;
-      line-height: 0.2;
-    }
-
-    h2 {
-      text-align: center;
-      font-family: "Didact Gothic", sans-serif;
-      margin-bottom: -5px;
-      margin-top: -5px;
-    }
-
-    img {
-      width: 100%;
-      /* max-width: 1920px; */
-      height: auto;
-      border-radius: 0.25rem;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .learn-button {
-      display: block;
-      margin: 50px auto;
-      padding: 0.5rem 1.5rem;
-      background-color: black;
-      border: none;
-      color: white;
-      font-size: 1.8rem;
-      font-family: "Arimo", sans-serif;
-      cursor: pointer;
-      border-radius: 2rem;
-      outline-style: solid;
-      transition: background 0.3s ease-in-out;
-    }
-
-    .learn-button a {
-      color: white;
-    }
-
-    .learn-button:hover {
-      background: white;
-      color: black;
-      outline-style: solid;
-    }
-
-    .learn-button a:hover {
-      color: black;
-    }
-
-    button .fa-circle-half-stroke {
-      height: 50%;
-      width: 50%;
-      font-size: 1rem;
-      display: block;
-      align-self: center;
-      position: relative;
-      color: #21262b;
-      background: transparent;
-      letter-spacing: 0.1rem;
-      cursor: pointer;
-    }
-
-    .icon-font {
-      font-family: "Didact Gothic", sans-serif;
-    }
-
-    .toggle-button {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      justify-content: center;
-      padding-bottom: 10px;
-      background: transparent;
-      border: none;
-      outline: none;
-    }
-
-    .container {
-      margin: 20px auto;
-      width: 866px;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 70%;
-    }
-
-    p {
-      line-height: 1.5;
-      font-family: "Didact Gothic", sans-serif;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    a.wiki {
-      text-decoration: red underline;
-      text-underline-offset: 0.3rem;
-      text-decoration-thickness: 0.1rem;
-      color: black;
-      font-weight: bolder;
-    }
-
-    a.wiki:hover {
-      font-size: 16.5px;
-    }
-
-    footer {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    footer a {
-      color: red;
-      font-weight: bold;
-    }
-
-    .camera-intro-picture {
-      display: block;
-      transition: all 0.3s ease-in-out;
-      margin-bottom: 20px;
-      margin-top: 10px;
-    }
-
-    .camera-intro-picture:hover {
-      filter: contrast(50%);
-      transform: scale(1.1);
-      cursor: pointer;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      /* grid-template-columns: repeat(4,200px); */
-      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-      grid-gap: 20px;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .grid img {
-      width: 100%;
-      cursor: zoom-in;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .grid img:hover {
-      transform: scale(3);
-    }
-
-    .dark {
-      background: #21262b;
-      /* color: #fdfdfd; */
-      color: #f2f2f2;
-      background-color: #21262b;
-    }
-
-    .dark .container {
-      background: #353d44;
-    }
-
-    .dark .icon-font,
-    .dark .fa-circle-half-stroke {
-      color: #f2f2f2;
-    }
-
-    .dark a.wiki {
-      color: white;
-    }
-
-    .dark footer a {
-      color: #8e8e8e;
-    }
-
-    @media screen and (max-width: 655px) {
-      h1 {
-        line-height: 1;
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+          lightgrey 0%,
+          lightgrey 1%,
+          #e0e0e0 26%,
+          #efefef 48%,
+          #d9d9d9 75%,
+          #bcbcbc 100%
+        );
       }
 
-      /* img {
+      h1 {
+        font-family: "Arimo", sans-serif;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 0.2;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "Didact Gothic", sans-serif;
+        margin-bottom: -5px;
+        margin-top: -5px;
+      }
+
+      img {
+        width: 100%;
+        /* max-width: 1920px; */
+        height: auto;
+        border-radius: 0.25rem;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+          0px 20px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .learn-button {
+        display: block;
+        margin: 50px auto;
+        padding: 0.5rem 1.5rem;
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        font-family: "Arimo", sans-serif;
+        cursor: pointer;
+        border-radius: 2rem;
+        outline-style: solid;
+        transition: background 0.3s ease-in-out;
+      }
+
+      .learn-button a {
+        color: white;
+      }
+
+      .learn-button:hover {
+        background: white;
+        color: black;
+        outline-style: solid;
+      }
+
+      .learn-button a:hover {
+        color: black;
+      }
+
+      button .fa-circle-half-stroke {
+        height: 50%;
+        width: 50%;
+        font-size: 1rem;
+        display: block;
+        align-self: center;
+        position: relative;
+        color: #21262b;
+        background: transparent;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+      }
+
+      .icon-font {
+        font-family: "Didact Gothic", sans-serif;
+      }
+
+      .toggle-button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .container {
+        margin: 20px auto;
+        width: 866px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 70%;
+      }
+
+      p {
+        line-height: 1.5;
+        font-family: "Didact Gothic", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a.wiki {
+        text-decoration: red underline;
+        text-underline-offset: 0.3rem;
+        text-decoration-thickness: 0.1rem;
+        color: black;
+        font-weight: bolder;
+      }
+
+      a.wiki:hover {
+        font-size: 16.5px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      footer a {
+        color: red;
+        font-weight: bold;
+      }
+
+      .camera-intro-picture {
+        display: block;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+      .camera-intro-picture:hover {
+        filter: contrast(50%);
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4,200px); */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-gap: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(3);
+      }
+
+      .dark {
+        background: #21262b;
+        /* color: #fdfdfd; */
+        color: #f2f2f2;
+        background-color: #21262b;
+      }
+
+      .dark .container {
+        background: #353d44;
+      }
+
+      .dark .icon-font,
+      .dark .fa-circle-half-stroke {
+        color: #f2f2f2;
+      }
+
+      .dark a.wiki {
+        color: white;
+      }
+
+      .dark footer a {
+        color: #8e8e8e;
+      }
+
+      @media screen and (max-width: 655px) {
+        h1 {
+          line-height: 1;
+        }
+
+        /* img {
         max-width: 960px;
       } */
-    }
-
-    @media screen and (max-width: 576px) {
-      .container {
-        max-width: 85%;
       }
 
-      /* img {
+      @media screen and (max-width: 576px) {
+        .container {
+          max-width: 85%;
+        }
+
+        /* img {
         max-width: 480px;
       } */
-    }
+      }
 
-    /* @media screen and (max-width: 415px) {
+      /* @media screen and (max-width: 415px) {
       img {
         max-width: 340px;
       }
     } */
-  </style>
+    </style>
+  </head>
   <body>
     <div class="container">
       <h1>Vintage Photography</h1>
